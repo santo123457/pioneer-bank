@@ -1,12 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"  crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+
+    <title>Pioneer Bank!</title> 
+  </head>
+  <body>
     
-</body>
+    <div class="container" id="login-area">
+      <h1 class= "text-center">Welcome to Pioneer Bank</h1>
+      <div class="submit-area shadow p-3 mb-5 bg-white rounded">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email Adress" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="button" id="login" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="container" id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+         <div class="status deposit">
+          <h5>Deposit</h5>
+          <h1>$ <span id="currentDeposit">00</span> </h1>
+         </div>
+        </div>
+        <div class="col-md-4">
+          <div class="status withdrow">
+            <h5>Withdrow</h5>
+          <h1>$ <span id="currentWithdrow">00</span></h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="status balance">
+            <h5>Balance</h5>
+          <h1>$ <span id="currentBalance">1240</span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-5 shadow p-3 mb-5 bg-white rounded">
+         <div class="depo-area">
+          <h4>Deposit</h4>
+          <input id ="depositAmount" class="form-control"   placeholder="$ you wants to Deposit">
+      
+          <button type ="submit" id="addDeposit" class="btn btn-success mt-3">Deposit</button>
+         </div>
+        </div>
+        <div class="col-5 shadow p-3 mb-5 bg-white rounded">
+         <div class="withdrow-area">
+          <h4>Withdrow</h4>
+      <input id="withdrowAmount" class="form-control" placeholder="$ you wants to Withdrow">
+  
+      <button type ="submit" id="addWithdrow" class="btn btn-success mt-3">Withdrow</button>
+    </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
